@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="js/DataStructures/set.js"></script>
+    <script type="text/javascript" src="js/DataStructures/stack.js"></script>
+    <script type="text/javascript" src="js/DataStructures/priorityqueue.js"></script>
+    <script type="text/javascript" src="js/cell.js"></script>
+    <script type="text/javascript" src="js/sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <section class="control">
+      <select id="custom_select" class="opt">
+        <option value="default">Seleccione un método de búsqueda</option>
+        <option value="profundidad_primero">Profundidad primero</option>
+        <option value="primero_mejor">Primero el mejor</option>
+        <option value="a_estrella">A*</option>
+      </select>
+      <button type="button" id="custom_btn" class="btn-custom">continuar</button>
+    </section>
+    <script> document.getElementById("custom_btn").onclick = function() {selectSearch()}; </script>
+  </body>
+</html>
